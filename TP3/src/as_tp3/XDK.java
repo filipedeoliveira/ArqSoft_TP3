@@ -13,7 +13,7 @@ import java.util.Vector;
  * @author Stéphane
  */
 public class XDK {
-    public static void main(String args[]) {
+    public static void controlador() {
 
         // Create a hash map
         Vector<Integer> xdk1_reading_1= new Vector<>();
