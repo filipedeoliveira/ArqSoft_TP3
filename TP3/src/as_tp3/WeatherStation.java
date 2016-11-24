@@ -16,11 +16,6 @@ public class WeatherStation implements WeatherObserver {
 
     public WeatherStation() {
 
-        this.humidade = new HashMap<LocalDate, Vector<Integer>>();
-        this.temperatura = new HashMap<LocalDate, Vector<Integer>>();
-        this.audio = new HashMap<LocalDate, Vector<Integer>>();
-        this.luminosidade = new HashMap<LocalDate, Vector<Integer>>();
-        this.pressao_atm = new HashMap<LocalDate, Vector<Integer>>();
     }
 
     /**
@@ -35,6 +30,11 @@ public class WeatherStation implements WeatherObserver {
      */
     @Override
     public void update(int id, Vector<Integer> values) {
+        this.humidade = new HashMap<LocalDate, Vector<Integer>>();
+        this.temperatura = new HashMap<LocalDate, Vector<Integer>>();
+        this.audio = new HashMap<LocalDate, Vector<Integer>>();
+        this.luminosidade = new HashMap<LocalDate, Vector<Integer>>();
+        this.pressao_atm = new HashMap<LocalDate, Vector<Integer>>();
 
         switch (id) {
             case 1: // XDK exterior
