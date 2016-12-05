@@ -1,9 +1,8 @@
-package as_tp3;
 import java.time.LocalDate;
 import java.util.Vector;
 
 public class XDK {
-    public static void controlador() {
+    public void controlador() {
         // Create a hash map
         Vector<Integer> xdk1_reading_1= new Vector<>();
         xdk1_reading_1.add(23);
@@ -20,9 +19,11 @@ public class XDK {
         xdk1_reading_2.add(5);
 
         WeatherStation iot = new WeatherStation();
-        // simular a recepÃ§Ã£o de valores
+        // simular a recepção de valores
         iot.update(1, xdk1_reading_1);
         iot.update(1, xdk1_reading_2);
+    }
+   /* public static void ver(){ 
 
        // Views
         View view = new View();
@@ -36,7 +37,5 @@ public class XDK {
         view.mostra_humidade();
         view.mostra_media(LocalDate.now(),0);
         view.mostra_ultimos_dias(0,2);
-
-
-    }
+    }*/
 }
